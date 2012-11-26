@@ -6,9 +6,9 @@ session_start();
 
 define("BANCO", "LOCAL");
 define("HOST", "localhost");
-define("DATABASE", "paulo");
-define("USER", "root");
-define("PASS", "lordswxp");
+define("DATABASE", "xxx");
+define("USER", "xxx");
+define("PASS", "xxx");
 
 
 
@@ -25,7 +25,7 @@ function __autoload($class) {
             if (is_file($dir . "/" . $class . ".php")) {
 
                 require_once($dir . "/" . $class . ".php");
-            } 
+            }
         }
     }
 }
