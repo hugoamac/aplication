@@ -6,9 +6,9 @@ session_start();
 
 define("BANCO", "LOCAL");
 define("HOST", "localhost");
-define("DATABASE", "xxx");
-define("USER", "xxx");
-define("PASS", "xxx");
+define("DATABASE", "");
+define("USER", "");
+define("PASS", "");
 
 
 
