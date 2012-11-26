@@ -1,0 +1,425 @@
+/*
+    Document   : controle
+    Created on : 10/11/2012, 15:22:07
+    Author     : hugo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+#main{
+
+    width: 100%;
+    min-height: 100%;
+
+}
+#header{
+
+    background: #3b5996;
+    height:70px;
+}
+#header h1{
+
+    display: inline;
+    font-size: 24px;
+    font-family: Trebuchet MS;
+    position: relative;
+    top:18px;
+    left:10px;
+    text-shadow: 0px 1px 1px #000000;
+}
+#header h1 a{
+
+    color: #ffffff;
+    text-decoration: none;
+
+}
+#header ul{
+
+    float: right;
+    list-style-type: none;
+    position: relative;
+    color: #ffffff;
+    top:23px;
+    right: 36px;
+
+}
+#header ul li{
+    float: left;
+    padding: 0px 5px;
+}
+#header ul li img{
+
+    padding: 2px;
+    background: #ffffff;
+    vertical-align:top;
+    position: relative;
+    top:-9px;
+}
+#header ul li a{
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#container{
+
+    width: 100%;
+    min-height: 600px;
+
+
+}
+#menu_left{
+    float: left;
+    width:16%;
+    min-height: 600px;
+    border-right: solid 1px #e1e1e1;
+    padding: 0px 5px;
+
+}
+
+.navMenu{
+
+    list-style-type: none;
+    background:#d8dee8;
+    margin-top: 5px;
+    /*border: solid 1px #ccc;*/
+    color: #000000;
+
+
+}
+
+.navMenu li:first-child{
+
+    padding: 5px 0px;
+    text-align: center;
+}
+.navMenu li{
+
+    margin-bottom: 1px;
+
+}
+
+.navMenu li a{
+
+    background: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0px 5px 10px;;
+    color: #000000;
+
+}
+
+.navMenu li a:hover{
+
+    background: #b4c0d6;
+
+
+}
+
+#content{
+    float: right;
+    width:81%;
+    min-height: 600px;
+    background: #ffffff;
+    padding: 0px 5px 40px 5px;
+
+}
+
+#breadcrumbs{
+
+    margin-top: 5px;
+    list-style-type: none;
+    background:#d8dee8;
+    height: 26px;
+
+
+}
+#breadcrumbs li{
+    position: relative;
+    float: left;
+    padding: 5px 10px;
+    background: url('/images/controle/bc_separator.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#breadcrumbs li a{
+    text-decoration: none;
+    color: #000000;
+}
+#content h1{
+    padding: 10px 0px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 16px;
+    border-bottom: solid 1px #ccc;
+}
+
+/*****ESTILOS PARA FORMULARIOS DE FILTRO*****/
+.Filtro{
+    margin-top: 20px;
+    width:435px;
+    padding: 0px 0px 20px 0px;
+    /*box-shadow: 0px 1px 1px #ccc;*/
+
+}
+.Filtro h3{
+    background:#d8dee8;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 10px;
+
+}
+.Filtro table{
+
+    background: #ffffff;
+
+}
+.Filtro table tr{
+
+    padding: 5px;
+}
+.Filtro table th{
+
+    padding: 5px;
+}
+.Filtro input[type=text]{
+
+    width: 350px;
+    border: 1px solid #d8dee8;
+    padding: 5px;
+}
+.Filtro button{
+    background: #E5E5E5;
+    background-repeat: repeat-x;
+    background-image: url('/images/admin/guide.gif');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#E5E5E5');
+    background: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#E5E5E5));
+    background: -moz-linear-gradient(whiteSmoke, #E5E5E5) repeat scroll 0 0 transparent;
+    border-color: #DDD #DDD #BBB;
+    border-image: none;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 4px 15px;
+    position: relative;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+/*****FOM DOS ESTILOS PARA FORMULARIOS DE FILTRO*****/
+
+
+/*****ESTILOS PARA FORMULARIOS DE FORM*****/
+.Form{
+    margin-top: 20px;
+    padding: 0px 0px 20px 0px;
+    /*box-shadow: 0px 1px 1px #ccc;*/
+
+}
+.Form h3{
+    /*background:#d8dee8;*/
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 10px;
+
+}
+.Form table{
+
+    background: #ffffff;
+
+}
+.Form table tr{
+
+    padding: 5px;
+}
+.Form table th{
+
+    padding: 5px;
+}
+.Form input[type=text]{
+
+    width: 350px;
+    border: 1px solid #d8dee8;
+    padding: 5px;
+}
+.Form input[type=password]{
+
+    width: 150px;
+    border: 1px solid #d8dee8;
+    padding: 5px;
+}
+.Form button{
+    background: #E5E5E5;
+    background-repeat: repeat-x;
+    background-image: url('/images/admin/guide.gif');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#E5E5E5');
+    background: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#E5E5E5));
+    background: -moz-linear-gradient(whiteSmoke, #E5E5E5) repeat scroll 0 0 transparent;
+    border-color: #DDD #DDD #BBB;
+    border-image: none;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 4px 15px;
+    position: relative;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+/*****FOM DOS ESTILOS PARA FORMULARIOS DE FORM*****/
+
+
+.clear{
+
+    clear: both;
+}
+#footer{
+
+    background: #eeeeee;
+    text-align: center;
+    padding: 25px 0px;
+}
+.Botao{
+
+    background: #E5E5E5;
+    background-repeat: repeat-x;
+    background-image: url('/images/admin/guide.gif');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#E5E5E5');
+    background: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#E5E5E5));
+    background: -moz-linear-gradient(whiteSmoke, #E5E5E5) repeat scroll 0 0 transparent;
+    border-color: #DDD #DDD #BBB;
+    border-image: none;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 3px 10px;
+    position: relative;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.Lista{
+
+    width:100%;
+    /*box-shadow: 0px 1px 1px #ccc;*/
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+.Lista thead{
+    background:#d8dee8;
+}
+.Lista thead th{
+
+    padding: 5px;
+}
+.Lista tbody td{
+    color: #4F4F4F;
+    text-align: center;
+    padding: 5px;
+}
+.Lista tbody tr{
+
+    border-bottom: solid 1px #DDD;
+}
+.Lista tbody tr:hover{
+
+    background:#F8F8FF;
+    cursor: pointer;
+}
+#Paginacao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+#Paginacao li{
+    position: relative;
+    float: left;
+    margin-right: 1px;
+}
+#Paginacao li a{
+    padding: 5px;
+    background:#d8dee8;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+.PaginacaoActive{
+    background: #3b5996 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+.sucesso{
+
+    background: url('/images/comuns/sucesso.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 5px 0px 5px 29px;;
+    margin: 5px 0px;
+    height: 25px;
+    color:#008B00;
+    font-weight: bold;
+
+
+}
+.alerta{
+    background: url('/images/comuns/alerta.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 5px 0px 5px 29px;;
+    margin: 5px 0px;
+    height: 25px;
+    color:#EEAD0E;
+    font-weight: bold;
+
+
+}
+.erro{
+
+    background: url('/images/comuns/erro.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 5px 0px 5px 29px;;
+    margin: 5px 0px;
+    height:25px;
+    color: #ff0000;
+    font-weight: bold;
+
+}
+.error{
+    background: #FFF68F;
+    border:#FFD700;
+}
