@@ -6,6 +6,9 @@
 <!-- JQUERY UI-->
 <link href="/library/jquery_ui/css/smoothness/jquery_ui.css" rel="stylesheet" type="text/css"/>
 <script src="/library/jquery_ui/js/jquery_ui.js" type="text/javascript"></script>
+<script src="/library/jquery_ui/js/jquery_ui_pt_br_datepicker.js" type="text/javascript"></script>
+<!-- JQUERY MASKINPUT-->
+<script src="/library/jquery_maskinput/jquery_maskinput.js" type="text/javascript"></script>
 <!-- JQUERY VALIDATE-->
 <script src="/library/jquery_validate/jquery_validate.js" type="text/javascript"></script>
 <!-- SCRIPTS CONTROLE -->

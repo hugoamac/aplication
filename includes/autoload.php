@@ -1,14 +1,14 @@
 <?php
 
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE ^ E_STRICT);
 
 session_start();
 
 define("BANCO", "LOCAL");
 define("HOST", "localhost");
-define("DATABASE", "");
-define("USER", "");
-define("PASS", "");
+define("DATABASE", "paulo");
+define("USER", "root");
+define("PASS", "lordswxp");
 
 
 

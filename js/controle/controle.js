@@ -31,6 +31,21 @@ $(function(){
             }                        
         });
     }
+    if($(".data").length){
+        
+        $(".data").mask("99/99/9999");
+        $(".data").datepicker({
+            showOn: "button",
+            buttonImage: "/images/comuns/icon-calendar.png",
+            buttonImageOnly: true,
+            dateFormat:'dd/mm/yy'
+        });
+        $(".data").css({
+            'width' :'100px'
+           
+        });
+        
+    }
     
 })
 

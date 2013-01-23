@@ -1,6 +1,6 @@
 <?php
 
-abstract class AppModel extends Crud{
+abstract class AppModel extends Crud {
 
     protected $table;
     protected $model_transacao;
@@ -45,7 +45,7 @@ abstract class AppModel extends Crud{
 
     public function update(array $dados, array $where, $operator = array()) {
 
-        $data_atual = $this->find(array('id' => $dados['id']));
+        $data_atual = $this->find(array('id' => $where['id']));
         $rs = parent::update($dados, $where, $operator);
 
         if ($rs) {
@@ -54,7 +54,11 @@ abstract class AppModel extends Crud{
             if ($data_atual) {
                 foreach ($data_atual as $col => $val) {
 
-                    $descricao.="{$col}: $val para {$dados[$col]}\n";
+                    if (!empty($dados[$col])) {
+                        $descricao.="{$col}: $val <b>para</b> {$dados[$col]}\n";
+                    } else {
+                        $descricao.="{$col}: $val <b>para</b> {$val}\n";
+                    }
                 }
             }
             $data = array(

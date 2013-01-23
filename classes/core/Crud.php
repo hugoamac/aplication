@@ -304,7 +304,7 @@ class Crud {
         $limit = " LIMIT {$this->pagination->getLimitPerPage()}";
         $offset = " OFFSET {$this->pagination->getQtde()}";
 
-        $sql = " SELECT * FROM `{$this->table}` {$where} {$orderby} {$limit} {$offset}";        
+        $sql = " SELECT * FROM `{$this->table}` {$where} {$orderby} {$limit} {$offset}";
 
         $q = $this->db->prepare($sql);
         $q->setFetchMode(PDO::FETCH_ASSOC);
@@ -469,6 +469,36 @@ class Crud {
         }
 
         return $vsCols;
+    }
+
+    public function fetchPaginator($sql) {
+
+        $sql_count = str_replace("*", " COUNT(*) count_total", $sql);
+
+
+        $Db = $this->getDb();
+        $query = $Db->query($sql_count);
+        $res = $query->fetch(PDO::FETCH_ASSOC);
+        if ($res) {
+            $count_total = (INT) $res['count_total'];
+        }
+
+        $this->pagination->setPaginators($count_total);
+        $limit = " LIMIT {$this->pagination->getLimitPerPage()}";
+        $offset = " OFFSET {$this->pagination->getQtde()}";
+
+        $sql = $sql . $limit . $offset;
+        $query = $Db->query($sql);
+        $res = $query->fetchAll(PDO::FETCH_ASSOC);
+        if ($res) {
+            foreach ($res as $c => $vv) {
+                foreach ($vv as $a => $v) {
+                    $res[$c][$a] = stripslashes($v);
+                }
+            }
+        }
+
+        return $res;
     }
 
 }

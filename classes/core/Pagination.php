@@ -14,7 +14,7 @@ class Pagination {
     protected $_paginator = "page";
     protected $_paginators = array();
     protected $_init;
-    protected $_limit_per_page = 20;
+    protected $_limit_per_page = 50;
     protected $_first_page = 1;
     protected $_last_page;
     protected $_next;
@@ -110,6 +110,7 @@ class Pagination {
     }
 
     public function setPaginators($data) {
+
 
         if (is_array($data)) {
 
