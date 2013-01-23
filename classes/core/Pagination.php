@@ -1,9 +1,5 @@
 <?php
 
-//292,468,022,53
-//118741132
-//10699
-
 /**
  * Description of Pagination
  *
