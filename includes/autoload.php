@@ -8,7 +8,7 @@ define("BANCO", "LOCAL");
 define("HOST", "localhost");
 define("DATABASE", "paulo");
 define("USER", "root");
-define("PASS", "lordswxp");
+define("PASS", "");
 
 
 
